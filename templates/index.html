@@ -69,6 +69,9 @@
 
 {% set content %}
 <form method="post" action="" accept-charset="UTF-8">
+    
+    {{ getCsrfInput() }}
+    
     <input type="hidden" name="action" value="sitemap/saveSections">
 
     <table id="sitemap" class="sitemap data">
